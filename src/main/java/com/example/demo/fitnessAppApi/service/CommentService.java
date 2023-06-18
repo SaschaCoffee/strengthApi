@@ -1,5 +1,9 @@
-package com.example.demo.comment;
+package com.example.demo.fitnessAppApi.service;
 
+import com.example.demo.fitnessAppApi.Repository.CommentRepository;
+import com.example.demo.fitnessAppApi.Repository.UserRepository;
+import com.example.demo.fitnessAppApi.entity.User;
+import com.example.demo.fitnessAppApi.entity.Comment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +17,7 @@ public class CommentService {
 
     @Autowired
     private UserRepository userRepository;
-    public comment userPostComment(comment comment, Long userId){
+    public Comment userPostComment(Comment comment, Long userId){
 
 
             Optional<User> user = userRepository.findById(1L);

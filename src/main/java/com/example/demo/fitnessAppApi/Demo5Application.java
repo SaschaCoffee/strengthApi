@@ -1,10 +1,9 @@
-package com.example.demo.comment;
+package com.example.demo.fitnessAppApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
 
-@SpringBootApplication(scanBasePackages = "com.example.demo.comment")
+@SpringBootApplication(scanBasePackages = "com.example.demo.fitnessAppApi")
 public class Demo5Application {
 
     public static void main(String[] args) {

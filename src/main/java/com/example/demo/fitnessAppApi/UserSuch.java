@@ -1,5 +1,8 @@
-package com.example.demo.comment;
+package com.example.demo.fitnessAppApi;
 
+import com.example.demo.fitnessAppApi.Repository.UserRepository;
+import com.example.demo.fitnessAppApi.entity.User;
+import com.example.demo.fitnessAppApi.service.userService;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

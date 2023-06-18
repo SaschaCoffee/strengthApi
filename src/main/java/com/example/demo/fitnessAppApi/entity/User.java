@@ -1,4 +1,4 @@
-package com.example.demo.comment;
+package com.example.demo.fitnessAppApi.entity;
 
 import jakarta.persistence.*;
 
@@ -17,9 +17,9 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL,
             fetch = FetchType.LAZY, orphanRemoval = true,
             mappedBy = "user")
-    private Set<comment> comments;
+    private Set<Comment> comments;
 
-    public User(String name, Set<comment> comments) {
+    public User(String name, Set<Comment> comments) {
         this.name = name;
         this.comments = comments;
     }
@@ -36,11 +36,11 @@ public class User {
         this.name = name;
     }
 
-    public Set<comment> getComments() {
+    public Set<Comment> getComments() {
         return comments;
     }
 
-    public void setComments(Set<comment> comments) {
+    public void setComments(Set<Comment> comments) {
         this.comments = comments;
     }
 

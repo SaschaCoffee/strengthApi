@@ -1,26 +1,28 @@
-package com.example.demo.comment;
+package com.example.demo.fitnessAppApi.entity;
 
 
 import jakarta.persistence.*;
 
 @Entity
-public class comment {
+public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", updatable = false, nullable = false)
     private Long id;
+
+
     private String comment;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
 
-    public comment(String comment, User user) {
+    public Comment(String comment, User user) {
         this.comment = comment;
         this.user = user;
     }
 
-    public comment() {
+    public Comment() {
 
     }
 
