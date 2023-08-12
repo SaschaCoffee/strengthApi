@@ -15,6 +15,10 @@ import java.util.Optional;
 public interface TrainingRepository extends JpaRepository<trainingsdaten, Long> {
     List<trainingsdaten> findAllByUser(final Optional<User> user);
 
+    trainingsdaten findByDate(final String Date);
+
+
+
 
 
 
